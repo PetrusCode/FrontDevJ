@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## App demonstration
 
-https://paisesinfo.netlify.app/region
+https://paisesinfo.netlify.app/
