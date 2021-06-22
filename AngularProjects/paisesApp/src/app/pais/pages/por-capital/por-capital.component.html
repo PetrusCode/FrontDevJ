@@ -1,0 +1,38 @@
+
+<div class="animate__animated animate__fadeIn animate__faster" >
+    <h2>Por Capital</h2>
+    <hr/>
+    <section class="row" >
+        <article class="col">
+    
+            <app-capital-input 
+            (onEnter)="buscar($event)"
+           (onDebounce)="sugerencias($event)"
+           placeholder="Buscar capital">
+           
+             
+                
+            </app-capital-input>
+    
+    
+        </article>
+    
+    </section>
+</div>
+
+<hr/>
+<div *ngIf="myError"
+    class="alert alert-danger">
+    No se encontro nada con el nombre {{termino}}
+</div>
+
+<section *ngIf="paises.length > 0" class="row">
+
+    <article class="col">
+       
+        <app-capital-tabla [paises]="paises"></app-capital-tabla>
+
+    </article>
+
+
+</section>

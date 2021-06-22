@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 80%;
+  margin: auto;
+}
+
+#sidebar {
+  height: 100%;
+  min-height: 60vh;
+  min-width: 300px;
+}

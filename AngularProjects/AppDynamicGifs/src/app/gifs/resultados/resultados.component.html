@@ -1,0 +1,24 @@
+<!-- <ul>
+    <li *ngFor="let gif of resultadosService">
+        {{}}
+    </li>
+    <li></li>
+    <li></li>
+</ul> -->
+
+<div>
+    <section *ngFor="let gif of resultadosService">
+
+        <article>
+            <span> {{  gif.title }}</span>
+            <figure>
+                <img 
+                [src]="gif.images.downsized_medium.url" 
+                [alt]="gif.title">
+                
+            </figure>
+           
+        </article>
+
+    </section>
+</div>

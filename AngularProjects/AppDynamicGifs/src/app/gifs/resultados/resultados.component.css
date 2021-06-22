@@ -1,0 +1,46 @@
+div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  background-color: rgb(250, 241, 241);
+  width: 100%;
+}
+
+span {
+  font-weight: bold;
+  font-variant: small-caps;
+  text-shadow: 1px 3px 1px rgb(0, 0, 0);
+  color: rgb(250, 112, 0);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+}
+
+figure {
+  width: 90%;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+figure img {
+  width: 100%;
+
+}
+
+div section {
+  font-display: flex;
+  margin: auto;
+}
+
+div section article {
+  margin: 1%;
+  min-width: 400px;
+  max-width: 400px;
+
+}
+
+div section article figure img:hover {
+  transform: scale(1.4);
+
+  transition: ease 1s;
+
+}

@@ -1,0 +1,14 @@
+aside {
+  display: flex;
+}
+
+app-gifs-page {
+  margin: auto;
+
+}
+
+app-sidebar {
+  width: 100%;
+
+  background-color: black;
+}

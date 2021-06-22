@@ -1,0 +1,58 @@
+
+<div class="animate__animated animate__fadeIn animate__faster">
+    <h2>Por Region <small>{{ regionActiva | titlecase }} </small></h2>
+    <hr/>
+    
+    <h4>Seleccione la region </h4>
+    <div class="row">
+        <div class="col">
+    
+            <!-- [class.btn-primary]="region === regionActiva" -->
+    
+            <!-- [ngClass]="{'btn-primary': regionActiva === region,
+                          'btn-outline-primary': regionActiva !== region}" -->
+            <button
+             *ngFor="let region of regiones"
+             [class]="getClass(region)"
+             (click)="activarRegion(region)"
+                >
+                {{ region | titlecase }}
+            </button>
+        </div>
+    </div>
+
+</div>
+
+
+<section class="row">
+    <article class="col">
+
+        <app-pais-input 
+        (onEnter)="buscar($event)"
+       
+       placeholder="Buscar region">
+       
+         
+            
+        </app-pais-input>
+
+
+    </article>
+
+</section>
+<hr/>
+<div *ngIf="myError"
+    class="alert alert-danger">
+    No se encontro nada con el nombre {{termino}}
+</div>
+
+<section *ngIf="paises.length > 0" class="row">
+
+    <article class="col">
+       
+        <app-capital-tabla [paises]="paises"></app-capital-tabla>
+
+    </article>
+
+
+</section>

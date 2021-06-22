@@ -1,0 +1,51 @@
+nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-width: 40px;
+  max-width: 50px;
+
+
+}
+
+h3 {
+  margin: auto;
+  font-size: 10vh;
+  font-style: italic;
+  font-family: fantasy;
+  color: rgb(201, 224, 231);
+}
+
+h3::first-letter {
+  color: #eb1919;
+}
+
+nav ul li {
+  flex-direction: column;
+  list-style: none;
+  display: flex;
+  flex: 1;
+}
+
+
+
+nav ul {
+
+
+  border-radius: 5%;
+  background-color: rgb(201, 224, 231);
+
+}
+
+nav ul a {
+
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1em;
+  justify-content: center;
+  font-weight: bold;
+
+}
+
+/* nav ul li a {} */

@@ -1,0 +1,16 @@
+<h3 >Gift-App</h3>
+
+<nav> 
+  
+    <ul id=sidebar>
+      <li>
+        <a *ngFor="let item of historial"
+        (click)="buscar( item )"
+        href="#"
+          >{{item | titlecase}}
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+	</head>
+
+		<style>
+			*
+			{
+				padding: 0;
+				margin: 0;
+			}
+
+			header
+			{	width: 100%;
+				
+				background-color: #3B5998;
+
+
+			}
+
+			header form
+			{	
+				
+				margin-left: 46%;
+				width: 30%;
+				padding: 0;
+				background-color:transparent;
+				border: none;
+				display:inline-block;
+
+		
+			}
+
+			header form a
+			{ 
+				margin: 0% 28%;
+				color: #829CC2;
+				text-decoration: none;
+
+			}
+
+			header form label
+			{ 
+				
+				color: #FFFFFF;
+
+				
+			}
+			header form label:nth-of-type(2)
+			{ 
+				
+				margin: 6%;
+
+				
+			}	
+
+			header form input[type="text"]:first-of-type
+			{ 
+				width: 22%;
+				padding: 4px;
+				margin: 1%;
+				
+			}
+
+			header form input[type="password"] 
+			{ 
+				width: 22%;
+				padding: 4px;
+				margin: 1%;
+	
+			}
+
+			header form input[type="submit"] 
+			{ 
+				width: 12%;
+				padding: 4px;
+				color: #FFFFFF;
+				background: #3F64AD;
+	
+			}
+
+			header h1
+			{	
+				color: #FFFFFF;
+				padding:  16px;
+				font-size: 2.5em;
+				display: inline-block;
+
+			}
+
+		
+
+			main
+			{	width: 100%;
+				background-color:
+				repeating-linear-gradient(to top,#DADEEB 40%, #EAECF4 80%, #D7DCEA 70%, #FDFDFD 40%);
+
+
+			}
+
+			:root
+			{
+				background-image: url(fake.png);
+				background-repeat: no-repeat;
+				background-position: 0% 100%;
+				background-size: 50%;
+			}
+
+		
+
+			main form
+			{
+				margin: 0% 60%;
+				width: 40%;
+				background-color:transparent;
+				border: none;
+			}
+
+			main form label
+			{
+				font-weight: bold;
+				color: rgb(0, 0, 0);
+				font-size: 1.2em;
+			}
+
+			main  input[type="submit"]
+			{ 
+				margin-left: 60%;
+				margin-top: 2%;
+				background-color: #5B9247;
+				color: white;
+				width: 15%;
+				height: 6vh;
+				box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+				border-radius: 10px;
+				font-size: 1.5em;
+
+			}
+
+			main form input[type="text"]:first-of-type
+			{ 
+				width: 30%;
+				padding: 12px;
+				margin: 1%;
+				box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+				
+			}
+			main form input[type="text"]:nth-of-type(2)
+			{ 
+				width: 28%;
+				margin: 1%;
+				padding: 12px;
+				box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+				
+			}
+			main form input[type="text"]:nth-of-type(3)
+			{ 
+				width: 65%;
+				margin: 1%;
+				padding: 12px;
+				box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+			}
+			main form input[type="password"]
+			{ 
+				width: 65%;
+				margin: 1%;
+				padding: 12px;
+				box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+				
+			}
+
+			main form a:first-of-type
+			{
+				color: #829CC2;
+				text-decoration: none;
+				float: right;
+				margin: 0% 30% 0% 0%;
+				
+			}
+
+			main a:first-of-type
+			{
+				color: #829CC2;
+				text-decoration: none;
+
+				
+		
+			}
+
+			main a:nth-of-type(2)
+			{
+				color: #829CC2;
+				text-decoration: none;
+		
+			}
+
+			main article p
+			{
+				
+				font-size: 0.8em;
+				
+			}
+
+			article
+			{
+				width: 	20%;
+				margin-left: 60%;
+				text-align: justify;
+				
+			}
+
+		
+			
+
+		</style>
+	
+	<body>
+
+		<header>
+			<h1>Fakebook</h1>
+
+
+			  <form id="head"> 
+				<label>Email or Phone</label> 
+				<label >Password</label><br/>
+				<input type="text" name="name" size="4" required="required"placeholder="Nombre de usuario"title="Su nombre de usuario debe tener de 3 a 8 caracteres de a-z" pattern="^[a-zA-Z]\w{2,7}" maxlength="8"/>
+				
+				<input type="password" name="pwd" size="4" required="required" placeholder="Introduzca la contraseña" maxlength="16" pattern="^[A-Z][a-zA-Z0-9]{3,15}" title="La contraseña debe iniciar en mayusculas con un minimo de 4 caracteres"/>
+
+				<input type="submit" value="Log in"/><br/>  
+
+				<a href="#">Forgotten account?</a>>
+			 </form>
+		</header>
+
+		<main>
+			
+			
+
+			<form >
+				
+					<h1>Create an account</h1>
+					<h3>it's free and always will be</h3>
+
+					<input type="text" name="name" placeholder="First name"/>
+					<input type="text" name="surname" placeholder="Surname"/><br/>
+					<input type="text" name="contact" placeholder="Mobile number or email address"/><br/>
+					<input type="password" name="pwd" placeholder="New password"/>
+					<br/>
+					<br/>
+
+
+					<label>Birthday</label>
+					<br/>
+					<br/>
+					 <a href="#">Why do i need to provide my <br/>date of birth?</a>
+					<select>
+						<option selected="selected" value="mes1">Jan</option>
+						<option value="mes2">Feb</option>
+					</select>
+					<select>
+						<option selected="selected" value="dia">19</option>
+						<option value="dias">20</option>
+					</select>
+					<select>
+						<option selected="selected" value="any">1992</option>
+						<option value="anys">1993</option>
+					</select>
+					<br/>
+					<br/>
+				
+
+					<input type="radio" name="hombre" value="H"/>
+					<label>Hombre</label>
+					<input type="radio" name="mujer" value="M"/>
+					<label>Mujer</label>
+					<br/>
+					<br/>
+			
+			</form>
+				<article>
+					<p>By clicking Sign Up you agree to our <a href="#"> Terms Data Policy </a>
+					and<a href="#"> Cookie Policy.</a>You may receive SMS notifications from us
+					and can opt out at any time.
+					</p>
+				</article>
+
+				<input type="submit" name="Sign Up" value="Sign Up"/>
+		
+		</main>
+
+	</body>
+</html>
